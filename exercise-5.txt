@@ -1,0 +1,11 @@
+///// Exercise 5
+
+mysql> TRUNCATE TABLE Entry;
+Query OK, 0 rows affected (0.01 sec)
+
+
+// TEST:
+mysql> SELECT * FROM Entry WHERE addressBookId=525 OR addressBookId=978 OR addressBookId=434;  
+Empty set (0.00 sec)
+
+mysql> 
