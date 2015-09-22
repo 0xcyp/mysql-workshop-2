@@ -1,0 +1,31 @@
+///// Exercise 12
+
+mysql> SELECT accountId, COUNT(*) FROM AddressBook GROUP BY accountID ORDER BY COUNT(*) DESC LIMIT 3;
++-----------+----------+
+| accountId | COUNT(*) |
++-----------+----------+
+|         5 |       19 |
+|        14 |       19 |
+|        58 |       18 |
++-----------+----------+
+3 rows in set (0.00 sec)
+
+mysql> 
+
+// Answer: 2 accounts own the most Address Books: accounts 5 & 14.
+
+
+mysql> SELECT addressBookId, COUNT(*) FROM Entry GROUP BY addressBookID ORDER BY COUNT(*) DESC LIMIT 3;                                                        
++---------------+----------+
+| addressBookId | COUNT(*) |
++---------------+----------+
+|            37 |       52 |
+|            20 |       50 |
+|            50 |       49 |
++---------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> 
+
+// Answer: Address Book 37 contains the most entries.
+
