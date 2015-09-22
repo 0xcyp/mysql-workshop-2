@@ -1,0 +1,18 @@
+//// Exercise 2
+
+mysql> INSERT INTO `Account` (`email`,`password`,`createdOn`,`modifiedOn`) VALUES ("hola.quetal@spanish.org","LUW56VCP8JK","2013-04-10 13:34:19","2015-12-18 06:07:54")
+    -> ;
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> 
+
+mysql> INSERT INTO `AddressBook` (`accountId`,`name`,`createdOn`,`modifiedOn`) VALUES (875,"Sed Libernos A Malo Corp.","2014-05-02 20:50:03","2013-02-11 09:47:10");                                                                                                                                                          
+Query OK, 1 row affected (0.04 sec)
+
+mysql> 
+
+mysql> INSERT INTO `Entry` (`addressBookId`,`firstName`,`lastName`,`birthday`,`type`,`subtype`,`contentLineOne`) VALUES (525,"Melchior","Adenauer","1974-02-16 14:58:42","home","phone","(514) 661-8281"),(978,"Kane","Brownie","1963-08-08 21:22:29","home","phone","(514) 361-3319"),(434,"Elie","Jarod","1956-09-22 13:54:47","home","phone","(514) 505-0435");                                                                                                                           
+Query OK, 3 rows affected (0.02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> 
