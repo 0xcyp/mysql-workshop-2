@@ -1,0 +1,36 @@
+///// Exercise 13
+
+mysql> SELECT COUNT(*) FROM Entry WHERE subtype='phone' AND contentLineOne LIKE "(3%";
++----------+
+| COUNT(*) |
++----------+
+|       39 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> 
+
+// Answer: 39 Address Book Entries have phones starting with area code 3XX.
+
+
+mysql> SELECT COUNT(*) FROM Entry WHERE subtype='phone' AND type='home' AND contentLineOne NOT LIKE "%5%";
++----------+
+| COUNT(*) |
++----------+
+|       76 |
++----------+
+1 row in set (0.00 sec)
+
+// Answer: 76 Address Book Entries have home phones not containing the digit 5.
+
+
+mysql> SELECT COUNT(*) FROM Entry WHERE subtype='phone' AND type='work' AND contentLineOne NOT LIKE "(%";                                                  
++----------+
+| COUNT(*) |
++----------+
+|       60 |
++----------+
+1 row in set (0.00 sec)
+
+// Answer: 60 Address Book Entries are work phones starting with a country code.
+
